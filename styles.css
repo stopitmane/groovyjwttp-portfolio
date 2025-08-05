@@ -563,6 +563,85 @@ body {
     text-decoration: underline;
 }
 
+/* References Section */
+.references {
+    padding: 80px 0;
+    background: white;
+}
+
+.references-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.reference-item {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.reference-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.reference-header h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.reference-role {
+    color: #2563eb;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.reference-date {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.reference-details {
+    margin-top: 1rem;
+}
+
+.reference-details p {
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+.reference-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.reference-link:hover {
+    color: #1d4ed8;
+}
+
+.reference-note {
+    background: #e5e7eb;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.reference-note p {
+    color: #374151;
+    margin: 0;
+}
+
 /* Contact Section */
 .contact {
     padding: 80px 0;
