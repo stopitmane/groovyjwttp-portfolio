@@ -16,6 +16,18 @@ const projects = [
     tags: ["React", "API Integration", "Real-time"]
   },
   {
+    title: "TimbuCloud Website",
+    description: "E-commerce site built with responsive design and optimized UX",
+    link: "https://timbucloudwebsite.vercel.app/",
+    tags: ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    title: "Bincom Profile Website",
+    description: "Python-based portfolio site showcasing Django and REST integration",
+    link: "https://bincom-nine.vercel.app/",
+    tags: ["Python", "Django", "REST API"]
+  },
+  {
     title: "E-Plant Shopping App",
     description: "E-commerce web application built with Node.js and Express.js, featuring responsive design and secure checkout",
     link: "https://stopitmane.github.io/e-plantShopping/",

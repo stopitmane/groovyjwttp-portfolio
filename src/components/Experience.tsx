@@ -44,6 +44,16 @@ const experiences = [
       "Implemented responsive UI designs with HTML, CSS, and Bootstrap 5",
       "Integrated cart and checkout functionality, improving usability and conversion rates"
     ]
+  },
+  {
+    title: "Biomedical Intern",
+    company: "LASUTH",
+    location: "Ikeja, Lagos",
+    period: "Jan 2020 - Jun 2020",
+    responsibilities: [
+      "Assisted in maintenance and troubleshooting of medical equipment (ECG machines, defibrillators, etc.)",
+      "Supported biomedical engineers in testing and calibration to ensure compliance and safety standards"
+    ]
   }
 ];
 

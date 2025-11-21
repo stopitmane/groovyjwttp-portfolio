@@ -69,9 +69,9 @@ const Contact = () => {
               className="gap-2 shadow-soft"
               asChild
             >
-              <a href="https://groovyjwttp-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <a href="https://docs.google.com/document/d/1rBlRbWu7k1_trSVfsEKIC3UTxzctQdj6/edit?usp=sharing&ouid=116009973024344697540&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="w-5 h-5" />
-                Current Portfolio
+                Recommendations
               </a>
             </Button>
           </div>
