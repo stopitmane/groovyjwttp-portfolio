@@ -1,35 +1,43 @@
 # Ajayi Taiwo John - Full Stack Developer Portfolio
 
-A modern, responsive portfolio website built with React, TypeScript, Vite, and Tailwind CSS.
+A modern, responsive portfolio website showcasing my professional experience, projects, skills, and certifications.
 
 ## About
 
-Full Stack Developer specializing in Python, Django, and modern JavaScript frameworks. This portfolio showcases my professional experience, projects, skills, and certifications.
+Full Stack Developer with hands-on experience in Python, Django, and modern JavaScript frameworks, skilled in building, deploying, and maintaining scalable, high-performance web applications.
 
 ## Tech Stack
 
-- **Frontend**: React 18, TypeScript
-- **Styling**: Tailwind CSS, shadcn/ui components
-- **Build Tool**: Vite
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Styling**: Custom CSS with modern design
+- **Icons**: Font Awesome
+- **Fonts**: Google Fonts (Inter)
 - **Deployment**: Vercel
 
 ## Features
 
-- ✨ Modern and responsive design
-- 🎨 Beautiful UI with shadcn/ui components
-- ⚡ Fast performance with Vite
-- 📱 Mobile-friendly
+- ✨ Clean and responsive design
+- 📱 Mobile-friendly interface
 - 🎯 SEO optimized
 - 🌙 Smooth animations and transitions
+- ⚡ Fast loading performance
+- 🎨 Professional UI/UX
+
+## Sections
+
+- **Home**: Hero section with introduction
+- **About**: Professional summary and background
+- **Skills**: Technical skills and competencies
+- **Experience**: Work history and achievements
+- **Projects**: Featured projects with live links
+- **Certifications**: Professional certifications and education
+- **Contact**: Contact information and social links
 
 ## Getting Started
 
-### Prerequisites
+Simply open `index.html` in your browser or deploy to any static hosting service.
 
-- Node.js (v18 or higher)
-- npm or yarn
-
-### Installation
+### Local Development
 
 ```bash
 # Clone the repository
@@ -38,47 +46,12 @@ git clone https://github.com/stopitmane/groovyjwttp-portfolio.git
 # Navigate to project directory
 cd groovyjwttp-portfolio
 
-# Install dependencies
-npm install
+# Open index.html in your browser
 ```
 
-### Development
+## Deployment
 
-```bash
-# Start development server
-npm run dev
-```
-
-The application will be available at `http://localhost:8080`
-
-### Build
-
-```bash
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
-```
-
-## Project Structure
-
-```
-src/
-├── components/          # React components
-│   ├── Hero.tsx        # Hero section
-│   ├── About.tsx       # About section
-│   ├── Skills.tsx      # Skills section
-│   ├── Experience.tsx  # Work experience
-│   ├── Projects.tsx    # Projects showcase
-│   ├── Certifications.tsx  # Certifications
-│   ├── Contact.tsx     # Contact information
-│   └── ui/            # shadcn/ui components
-├── pages/
-│   └── Index.tsx      # Main page
-├── App.tsx            # Main app component
-└── main.tsx           # Entry point
-```
+This portfolio is deployed on Vercel and automatically updates with each push to the main branch.
 
 ## Contact
 
@@ -87,6 +60,7 @@ src/
 - **LinkedIn**: [Ajayi John](https://www.linkedin.com/in/ajayi-john-124970265)
 - **GitHub**: [stopitmane](https://github.com/stopitmane)
 - **Portfolio**: [groovyjwttp-portfolio.vercel.app](https://groovyjwttp-portfolio.vercel.app/)
+- **Recommendations**: [View Document](https://docs.google.com/document/d/1rBlRbWu7k1_trSVfsEKIC3UTxzctQdj6/edit?usp=sharing&ouid=116009973024344697540&rtpof=true&sd=true)
 
 ## License
 
