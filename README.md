@@ -1,73 +1,93 @@
-# Welcome to your Lovable project
+# Ajayi Taiwo John - Full Stack Developer Portfolio
 
-## Project info
+A modern, responsive portfolio website built with React, TypeScript, Vite, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/767ac57e-d69e-4e5e-b7ab-7081115880ea
+## About
 
-## How can I edit this code?
+Full Stack Developer specializing in Python, Django, and modern JavaScript frameworks. This portfolio showcases my professional experience, projects, skills, and certifications.
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Frontend**: React 18, TypeScript
+- **Styling**: Tailwind CSS, shadcn/ui components
+- **Build Tool**: Vite
+- **Deployment**: Vercel
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/767ac57e-d69e-4e5e-b7ab-7081115880ea) and start prompting.
+## Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- ✨ Modern and responsive design
+- 🎨 Beautiful UI with shadcn/ui components
+- ⚡ Fast performance with Vite
+- 📱 Mobile-friendly
+- 🎯 SEO optimized
+- 🌙 Smooth animations and transitions
 
-**Use your preferred IDE**
+## Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js (v18 or higher)
+- npm or yarn
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+# Clone the repository
+git clone https://github.com/stopitmane/groovyjwttp-portfolio.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to project directory
+cd groovyjwttp-portfolio
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Development
+
+```bash
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build
 
-**Use GitHub Codespaces**
+```bash
+# Build for production
+npm run build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Preview production build
+npm run preview
+```
 
-## What technologies are used for this project?
+## Project Structure
 
-This project is built with:
+```
+src/
+├── components/          # React components
+│   ├── Hero.tsx        # Hero section
+│   ├── About.tsx       # About section
+│   ├── Skills.tsx      # Skills section
+│   ├── Experience.tsx  # Work experience
+│   ├── Projects.tsx    # Projects showcase
+│   ├── Certifications.tsx  # Certifications
+│   ├── Contact.tsx     # Contact information
+│   └── ui/            # shadcn/ui components
+├── pages/
+│   └── Index.tsx      # Main page
+├── App.tsx            # Main app component
+└── main.tsx           # Entry point
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Contact
 
-## How can I deploy this project?
+- **Email**: ajayijohn19999@gmail.com
+- **Phone**: +234 (0)9160650495
+- **LinkedIn**: [Ajayi John](https://www.linkedin.com/in/ajayi-john-124970265)
+- **GitHub**: [stopitmane](https://github.com/stopitmane)
+- **Portfolio**: [groovyjwttp-portfolio.vercel.app](https://groovyjwttp-portfolio.vercel.app/)
 
-Simply open [Lovable](https://lovable.dev/projects/767ac57e-d69e-4e5e-b7ab-7081115880ea) and click on Share -> Publish.
+## License
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+© 2024 Ajayi Taiwo John. All rights reserved.

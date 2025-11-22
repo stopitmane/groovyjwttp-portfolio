@@ -28,21 +28,6 @@ const certifications = [
     link: "https://drive.google.com/file/d/14CDotRinYQUXkbNr1FRIq5GL44hGqKfY/view"
   },
   {
-    name: "Python (Intermediate)",
-    issuer: "Bincom Academy",
-    link: "https://drive.google.com/file/d/14CDotRinYQUXkbNr1FRIq5GL44hGqKfY/view"
-  },
-  {
-    name: "Introduction to HTML, CSS & JavaScript",
-    issuer: "IBM – Coursera",
-    link: "https://drive.google.com/file/d/1LxCUtKs-mqkz-scB7morsZV1liQ_2UCr/view"
-  },
-  {
-    name: "Introduction to Cloud Computing",
-    issuer: "IBM – Coursera",
-    link: "https://drive.google.com/file/d/1MtdSuQYGhCJiRh_-SxZ0nLRsiace5Wxs/view"
-  },
-  {
     name: "Website Development Program",
     issuer: "DON-CLEM LTD",
     link: "https://drive.google.com/file/d/1L0CEvng9_20erC6cFtNCRqn3Z5tq99l9/view"
