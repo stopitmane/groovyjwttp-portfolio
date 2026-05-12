@@ -67,12 +67,9 @@ body {
 }
 
 .hero-container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    gap: 4rem;
-    align-items: center;
+    text-align: left;
 }
 
 .hero-greeting {
@@ -84,30 +81,32 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 300;
     margin-bottom: 0.5rem;
     color: #ffffff;
+    line-height: 1.1;
 }
 
 .hero-content h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #cccccc;
     margin-bottom: 2rem;
     font-weight: 400;
 }
 
 .hero-description {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #999999;
     margin-bottom: 1.5rem;
     line-height: 1.7;
+    max-width: 700px;
 }
 
 .hero-buttons {
     display: flex;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .btn {
@@ -137,6 +136,10 @@ body {
 }
 
 .profile-image {
+    display: none;
+}
+
+.profile-image {
     width: 400px;
     height: 500px;
     border-radius: 8px;
@@ -153,7 +156,7 @@ body {
 /* Section Styles */
 .section {
     padding: 6rem 2rem;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -170,6 +173,43 @@ body {
     color: #999999;
     margin-bottom: 4rem;
     font-size: 1.1rem;
+}
+
+/* About Section */
+.about-section {
+    padding: 4rem 2rem;
+}
+
+.about-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about-text {
+    font-size: 1.3rem;
+    color: #cccccc;
+    line-height: 1.7;
+    margin-bottom: 4rem;
+    text-align: left;
+}
+
+.specializations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.spec-item h3 {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.spec-item p {
+    color: #999999;
+    line-height: 1.6;
+    font-size: 0.95rem;
 }
 
 /* Skills Section */
@@ -489,14 +529,25 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hero-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 2rem;
+    .hero-content h1 {
+        font-size: 3rem;
     }
     
-    .hero-content h1 {
-        font-size: 2.5rem;
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .about-text {
+        font-size: 1.1rem;
+    }
+    
+    .specializations {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
     
     .skills-grid {
@@ -514,6 +565,14 @@ body {
         gap: 1.5rem;
     }
     
+    .featured-project {
+        grid-template-columns: 1fr;
+    }
+    
+    .featured-project .project-content {
+        padding: 2rem;
+    }
+    
     .contact-grid {
         grid-template-columns: 1fr;
     }
@@ -524,5 +583,9 @@ body {
     
     .section {
         padding: 4rem 1rem;
+    }
+    
+    .about-section {
+        padding: 3rem 1rem;
     }
 }
