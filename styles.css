@@ -341,7 +341,7 @@ body {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
-    overflow: hidden;
+    padding: 2rem;
     transition: all 0.3s ease;
 }
 
@@ -350,76 +350,78 @@ body {
     transform: translateY(-4px);
 }
 
-.featured-project {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    max-width: 100%;
-}
-
-.featured-project .project-image {
-    height: 400px;
-}
-
-.featured-project .project-content {
-    padding: 3rem;
-}
-
-.project-badge {
-    background: #3776ab;
-    color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 12px;
-    font-size: 0.8rem;
-    display: inline-block;
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 1rem;
 }
 
-.project-highlights {
-    margin: 1.5rem 0;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 4px;
-}
-
-.project-highlights h4 {
+.project-type {
+    background: rgba(255, 255, 255, 0.1);
     color: #ffffff;
-    margin-bottom: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.project-status {
+    color: #999999;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.project-title {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
     font-size: 0.9rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: border-color 0.3s ease;
 }
 
-.project-highlights ul {
-    list-style: none;
-    padding: 0;
+.project-link:hover {
+    border-color: #ffffff;
 }
 
-.project-highlights li {
+.project-description {
     color: #cccccc;
-    font-size: 0.85rem;
-    margin-bottom: 0.25rem;
-    padding-left: 1rem;
-    position: relative;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
 }
 
-.project-highlights li:before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: #3776ab;
+.project-image {
+    display: none;
 }
 
+.project-screenshot {
+    display: none;
+}
+
+/* Remove old featured project styles */
+.featured-project,
+.project-badge,
+.project-highlights,
 .project-link.primary {
-    background: #3776ab;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    border: none;
-}
-
-.project-link.primary:hover {
-    background: #2d5f8f;
-    border-color: transparent;
+    display: none;
 }
 
 .project-image {
