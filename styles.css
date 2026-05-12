@@ -253,6 +253,13 @@ body {
     margin: 4rem 0;
 }
 
+@media (max-width: 768px) {
+    .tech-stack {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
+
 .tech-item {
     display: flex;
     flex-direction: column;
@@ -392,13 +399,19 @@ body {
     color: #ffffff;
     text-decoration: none;
     font-weight: 500;
-    font-size: 0.9rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    transition: border-color 0.3s ease;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 4px;
 }
 
 .project-link:hover {
-    border-color: #ffffff;
+    color: #cccccc;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.project-link i {
+    font-size: 1.1rem;
 }
 
 .project-description {
