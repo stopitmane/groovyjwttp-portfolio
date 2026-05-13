@@ -3,403 +3,335 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajayi Taiwo John - Full Stack Developer</title>
-    <meta name="description" content="Full Stack Developer with IBM certification, specializing in Python, Django, React, and modern web technologies. Building scalable applications in Lagos, Nigeria.">
+    <title>Ajayi Taiwo John — Backend Developer</title>
+    <meta name="description" content="Backend Developer based in Lagos, Nigeria. IBM-certified. Building scalable APIs, production systems, and React frontends with Python, Django, and Node.js.">
     <meta name="author" content="Ajayi Taiwo John">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <h2>Ajayi.</h2>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
+            <a href="#home" class="nav-logo">Ajayi.</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about"      class="nav-link">About</a></li>
+                <li><a href="#skills"     class="nav-link">Skills</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#projects"   class="nav-link">Projects</a></li>
+                <li><a href="#contact"    class="nav-link">Contact</a></li>
             </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <p class="hero-greeting">IBM Certified Full Stack Developer</p>
-                <h1>Ajayi Taiwo John</h1>
-                <h2>Full Stack Developer</h2>
-                <p class="hero-description">
-                    Specializing in high-performance web applications, secure backend systems, and scalable full-stack solutions with Python, Django, and React.
+        <div class="hero-inner">
+            <div class="hero-text">
+                <p class="hero-eyebrow">
+                    <span class="dot"></span> Available for work &middot; Lagos, Nigeria
                 </p>
-                <p class="hero-description">
-                    IBM-certified Full Stack Developer with expertise in building complete web applications from database design to user interface, focusing on clean architecture and modern development practices.
+                <h1>Ajayi Taiwo<br><span class="accent">John.</span></h1>
+                <p class="hero-role">Backend Developer &mdash; Python &middot; Django &middot; React</p>
+                <p class="hero-bio">
+                    IBM-certified developer specialising in backend systems — REST APIs,
+                    production server configuration, and asynchronous task processing —
+                    with a strong React frontend to complete the stack.
                 </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Work</a>
-                    <a href="mailto:ajayijohn19999@gmail.com" class="btn btn-secondary">Contact Me</a>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">See My Work</a>
+                    <a href="#contact"  class="btn btn-outline">Get In Touch</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/stopitmane" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ajayi-john-124970265" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:ajayijohn19999@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-frame">
+                    <img src="profile.jpg" alt="Ajayi Taiwo John" />
+                </div>
+                <div class="hero-badge">
+                    <i class="fas fa-certificate"></i>
+                    IBM Certified
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="section-inner">
+            <p class="section-label">About Me</p>
+            <h2 class="section-heading">I build the systems<br>that power the product</h2>
+            <p class="about-lead">
+                My core is backend engineering — I've shipped production APIs with Django REST Framework,
+                configured Nginx and Gunicorn deployments, and cut response times with Celery and Redis.
+                I build React frontends too, but what I do best is make sure the thing behind the UI
+                is solid, scalable, and ready for real users.
+            </p>
+            <div class="about-cards">
+                <div class="about-card animate-on-scroll">
+                    <div class="about-card-icon">&#x1F527;</div>
+                    <h3>Backend Systems</h3>
+                    <p>Django REST APIs, production deployments with Nginx and Gunicorn, background jobs with Celery and Redis.</p>
+                </div>
+                <div class="about-card animate-on-scroll">
+                    <div class="about-card-icon">&#x26B3;&#xFE0F;</div>
+                    <h3>Frontend Development</h3>
+                    <p>React UIs with clean component architecture, TypeScript, responsive design, and real-world integrations.</p>
+                </div>
+                <div class="about-card animate-on-scroll">
+                    <div class="about-card-icon">&#x1F5C4;&#xFE0F;</div>
+                    <h3>Database Design</h3>
+                    <p>PostgreSQL schemas with proper relationships, indexing and query optimisation for high-load applications.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="section about-section">
-        <div class="about-content">
-            <p class="about-text">
-                Passionate Full Stack Developer from West Africa, with extensive experience in building robust web applications and scalable backend systems. I specialize in crafting high-performance, secure, and user-centric digital experiences with Python, Django, and React.
-            </p>
-            
-            <div class="specializations">
-                <div class="spec-item">
-                    <h3>🔧 Full Stack Architecture</h3>
-                    <p>Designing complete web applications from database schema to user interface, ensuring scalable and maintainable systems.</p>
-                </div>
-                
-                <div class="spec-item">
-                    <h3>🚀 Backend Systems</h3>
-                    <p>Building robust APIs and server-side applications with Django, implementing secure authentication and optimized performance.</p>
-                </div>
-                
-                <div class="spec-item">
-                    <h3>⚡ Modern Frontend Development</h3>
-                    <p>Creating responsive, interactive user interfaces with React and modern JavaScript, focusing on exceptional user experiences across all devices.</p>
-                </div>
-                
-                <div class="spec-item">
-                    <h3>📊 Database Design</h3>
-                    <p>Architecting efficient PostgreSQL databases with proper relationships, indexing, and query optimization for high-performance applications.</p>
-                </div>
-            </div>
-        </div>
-    </section>  
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
+        <div class="section-inner">
+            <p class="section-label">Tech Stack</p>
+            <h2 class="section-heading">Core technologies</h2>
 
-  <!-- Skills & Tools Section -->
-    <section id="skills" class="section">
-        <h2 class="section-title">Core Technology Stack</h2>
-        <p class="section-subtitle">Focused expertise in modern full stack development</p>
-        
-        <div class="tech-stack">
-            <div class="tech-item">
-                <i class="fab fa-python tech-icon" style="color: #3776ab; font-size: 48px;"></i>
-                <span class="tech-name">Python</span>
+            <div class="skills-primary">
+                <div class="skill-pill"><i class="fab fa-python"></i> Python</div>
+                <div class="skill-pill"><i class="fas fa-server"></i> Django</div>
+                <div class="skill-pill"><i class="fab fa-react"></i> React</div>
+                <div class="skill-pill"><i class="fab fa-js-square"></i> JavaScript</div>
+                <div class="skill-pill"><i class="fas fa-code"></i> TypeScript</div>
+                <div class="skill-pill"><i class="fab fa-node-js"></i> Node.js</div>
+                <div class="skill-pill"><i class="fas fa-database"></i> PostgreSQL</div>
+                <div class="skill-pill"><i class="fas fa-plug"></i> REST APIs</div>
             </div>
-            <div class="tech-item">
-                <i class="fas fa-train tech-icon" style="color: #cc0000; font-size: 48px;"></i>
-                <span class="tech-name">Django</span>
-            </div>
-            <div class="tech-item">
-                <i class="fab fa-react tech-icon" style="color: #61dafb; font-size: 48px;"></i>
-                <span class="tech-name">React</span>
-            </div>
-            <div class="tech-item">
-                <i class="fab fa-js-square tech-icon" style="color: #f7df1e; font-size: 48px;"></i>
-                <span class="tech-name">JavaScript</span>
-            </div>
-            <div class="tech-item">
-                <i class="fab fa-js-square tech-icon" style="color: #3178c6; font-size: 48px;"></i>
-                <span class="tech-name">TypeScript</span>
-            </div>
-            <div class="tech-item">
-                <i class="fas fa-gem tech-icon" style="color: #cc342d; font-size: 48px;"></i>
-                <span class="tech-name">Node.js</span>
-            </div>
-            <div class="tech-item">
-                <i class="fas fa-atom tech-icon" style="color: #dd0031; font-size: 48px;"></i>
-                <span class="tech-name">Angular</span>
-            </div>
-            <div class="tech-item">
-                <i class="fab fa-laravel tech-icon" style="color: #ff2d20; font-size: 48px;"></i>
-                <span class="tech-name">Laravel</span>
-            </div>
-            <div class="tech-item">
-                <i class="fas fa-database tech-icon" style="color: #336791; font-size: 48px;"></i>
-                <span class="tech-name">PostgreSQL</span>
-            </div>
-            <div class="tech-item">
-                <i class="fas fa-layer-group tech-icon" style="color: #0db7ed; font-size: 48px;"></i>
-                <span class="tech-name">REST APIs</span>
-            </div>
-        </div>
 
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h3>Full Stack Architecture</h3>
-                <p>Designing complete web applications from database schema to user interface, ensuring scalable and maintainable code architecture.</p>
-            </div>
-            <div class="skill-card">
-                <h3>API Development & Integration</h3>
-                <p>Building robust RESTful APIs with Django REST Framework and seamlessly integrating them with React frontends.</p>
-            </div>
-            <div class="skill-card">
-                <h3>Database Design & Optimization</h3>
-                <p>Creating efficient PostgreSQL database schemas, optimizing queries, and implementing proper data relationships.</p>
-            </div>
-            <div class="skill-card">
-                <h3>Modern Frontend Development</h3>
-                <p>Building responsive, interactive user interfaces with React, implementing state management and modern JavaScript patterns.</p>
+            <p class="skills-also">Also worked with: <span>Laravel &middot; Angular &middot; Redis &middot; Celery &middot; Nginx &middot; Gunicorn &middot; Git</span></p>
+
+            <div class="skills-depth">
+                <div class="depth-card animate-on-scroll">
+                    <h3>API Development</h3>
+                    <p>Django REST Framework — auth, serializers, pagination, and clean integration with React frontends.</p>
+                </div>
+                <div class="depth-card animate-on-scroll">
+                    <h3>Production Deployment</h3>
+                    <p>Nginx reverse proxy, Gunicorn WSGI server, Celery workers with Redis for background task processing.</p>
+                </div>
+                <div class="depth-card animate-on-scroll">
+                    <h3>React Architecture</h3>
+                    <p>Custom hooks, Context API state management, TypeScript, and clean separation of concerns across components.</p>
+                </div>
             </div>
         </div>
-    </section>  
-  <!-- Experience Section -->
+    </section>
+
+    <!-- Experience -->
     <section id="experience" class="section">
-        <h2 class="section-title">Experience</h2>
-        
-        <div class="experience-item">
-            <div class="experience-header">
-                <div>
-                    <h3 class="experience-title">Full Stack Developer (Apprenticeship)</h3>
-                    <p class="experience-company">Bincom Academy · Yaba, Lagos</p>
-                </div>
-                <span class="experience-date">Jul 2025 – Present</span>
-            </div>
-            <p class="experience-description">
-                Collaborated on full-stack web development projects, working with cross-functional teams to build scalable applications. 
-                Integrated RESTful APIs built with Laravel and Node.js, ensuring seamless data exchange and optimal performance. 
-                Contributed to projects serving over 15,000 active users while following modern development practices and code review processes.
-            </p>
-            <div class="tech-tags">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">Laravel</span>
-                <span class="tech-tag">REST APIs</span>
-                <span class="tech-tag">JavaScript</span>
-            </div>
-        </div>
+        <div class="section-inner">
+            <p class="section-label">Experience</p>
+            <h2 class="section-heading">Where I've worked</h2>
 
-        <div class="experience-item">
-            <div class="experience-header">
-                <div>
-                    <h3 class="experience-title">Backend Developer Intern</h3>
-                    <p class="experience-company">DON-CLEM LTD</p>
+            <div class="timeline">
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-body">
+                        <div class="timeline-meta">
+                            <span class="timeline-date">Jul 2025 – Present</span>
+                            <span class="timeline-badge">Current</span>
+                        </div>
+                        <h3>Full Stack Developer (Apprenticeship)</h3>
+                        <p class="timeline-company">Bincom Academy &middot; Yaba, Lagos</p>
+                        <p class="timeline-desc">Building full-stack applications within cross-functional teams. Integrating RESTful APIs with Laravel and Node.js for projects serving over 15,000 active users. Working within professional code review processes and modern development workflows.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span><span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Laravel</span><span class="tech-tag">REST APIs</span>
+                        </div>
+                    </div>
                 </div>
-                <span class="experience-date">Feb 2025 – Jun 2025</span>
-            </div>
-            <p class="experience-description">
-                Designed and built RESTful APIs with Django REST Framework, enabling seamless data exchange between frontend clients and backend services. 
-                Configured production deployments with Nginx as a reverse proxy and Gunicorn as the WSGI server, ensuring stable and scalable hosting. 
-                Implemented asynchronous task processing using Celery and Redis, reducing response times for long-running operations.
-            </p>
-            <div class="tech-tags">
-                <span class="tech-tag">Django REST Framework</span>
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Nginx</span>
-                <span class="tech-tag">Celery</span>
-                <span class="tech-tag">Redis</span>
-            </div>
-        </div>
 
-        <div class="experience-item">
-            <div class="experience-header">
-                <div>
-                    <h3 class="experience-title">Junior Full Stack Developer</h3>
-                    <p class="experience-company">Enerx Ltd · Adeniyi Jones, Lagos</p>
-                </div>
-                <span class="experience-date">Mar 2024 – Present</span>
-            </div>
-            <p class="experience-description">
-                Designed and developed a multi-page exhibition platform using React.js and Node.js, serving real-world users in production. 
-                Contributed to the John SciTec Website frontend, implementing interactive features and responsive UI components with React. 
-                Authored automated test cases to ensure API reliability, increasing code coverage and adherence to project standards.
-            </p>
-            <div class="tech-tags">
-                <span class="tech-tag">React.js</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">API Testing</span>
-            </div>
-        </div>
-    </section>   
- <!-- Projects Section -->
-    <section id="projects" class="section">
-        <h2 class="section-title">Featured Work</h2>
-        <p class="section-subtitle">A selection of premium web applications and development projects</p>
-        
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-header">
-                    <span class="project-type">TYPESCRIPT</span>
-                    <span class="project-status">LIVE LINK</span>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Product Management Dashboard</h3>
-                    <div class="project-links">
-                        <a href="https://github.com/stopitmane/product-dashboard.git" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://product-dashboard-task-drab.vercel.app/" target="_blank" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                    <p class="project-description">
-                        Enterprise-grade admin dashboard built with TypeScript and React, featuring real-time inventory management, 
-                        advanced data visualization, and responsive design. Demonstrates frontend expertise with modern React patterns, 
-                        custom hooks, and performance optimization techniques.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">CSS3</span>
-                        <span class="tech-tag">Data Visualization</span>
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-body">
+                        <div class="timeline-meta">
+                            <span class="timeline-date">Feb 2025 – Jun 2025</span>
+                        </div>
+                        <h3>Backend Developer Intern</h3>
+                        <p class="timeline-company">DON-CLEM LTD</p>
+                        <p class="timeline-desc">Designed and built RESTful APIs with Django REST Framework. Configured production deployments with Nginx and Gunicorn. Reduced response times for long-running operations by offloading background jobs to Celery and Redis.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Django REST Framework</span><span class="tech-tag">Python</span>
+                            <span class="tech-tag">Nginx</span><span class="tech-tag">Celery</span><span class="tech-tag">Redis</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="project-card">
-                <div class="project-header">
-                    <span class="project-type">REACT</span>
-                    <span class="project-status">LIVE LINK</span>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">TimbuCloud E-Commerce</h3>
-                    <div class="project-links">
-                        <a href="https://github.com/stopitmane/timbucloudwebsite.git" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://timbucloudwebsite.vercel.app/" target="_blank" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                    <p class="project-description">
-                        Modern e-commerce platform supporting Nigerian businesses with clean, responsive design and 
-                        intuitive user experience. Features product search, shopping cart functionality, and mobile-first design.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">E-Commerce</span>
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-body">
+                        <div class="timeline-meta">
+                            <span class="timeline-date">Mar 2024 – Present</span>
+                        </div>
+                        <h3>Junior Full Stack Developer</h3>
+                        <p class="timeline-company">Enerx Ltd &middot; Adeniyi Jones, Lagos</p>
+                        <p class="timeline-desc">Built a multi-page exhibition platform in React.js and Node.js serving real-world users in production. Implemented interactive UI features for the John SciTec Website. Authored automated test cases and integrated third-party APIs and internal microservices.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React.js</span><span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">API Testing</span><span class="tech-tag">Microservices</span>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <span class="project-type">ANGULAR</span>
-                    <span class="project-status">LIVE LINK</span>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">CV Builder Application</h3>
-                    <div class="project-links">
-                        <a href="https://github.com/stopitmane/cv-app.git" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://cv-app-one-sable.vercel.app/" target="_blank" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                    <p class="project-description">
-                        Single-page CV Builder built with Angular and TypeScript, showcasing component-based architecture 
-                        and reactive forms. Features dynamic form handling, real-time preview, and clean user interface design.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Angular</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">Reactive Forms</span>
-                        <span class="tech-tag">SPA</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <span class="project-type">REACT</span>
-                    <span class="project-status">LIVE LINK</span>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">NaijaCart Platform</h3>
-                    <div class="project-links">
-                        <a href="https://github.com/stopitmane/naijacart.git" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://naijacart-wttp.vercel.app/" target="_blank" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                    <p class="project-description">
-                        E-commerce platform for Nigerian agricultural products. Built with React and Node.js, featuring 
-                        category filters, responsive design, and optimized checkout flow tailored for local market needs.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">CSS3</span>
-                        <span class="tech-tag">E-Commerce</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <span class="project-type">DJANGO/REACT</span>
-                    <span class="project-status">LIVE LINK</span>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Freshcart E-Commerce Platform</h3>
-                    <div class="project-links">
-                        <a href="https://github.com/stopitmane/freshcart.candy.com.git" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://freshcart-candy-com.vercel.app/" target="_blank" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                    <p class="project-description">
-                        Full-stack Nigerian e-commerce platform with Django REST API and React frontend. Features product listings, 
-                        cart management, Paystack payment integration, user authentication, and a responsive mobile-first UI 
-                        targeting Nigerian consumers.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Django REST API</span>
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Paystack Integration</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> 
-   <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2 class="section-title">Contact</h2>
-        <p style="text-align: center; color: #999; margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-            I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out!
-        </p>
-        
-        <div class="contact-grid">
-            <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <h3>Email</h3>
-                <a href="mailto:ajayijohn19999@gmail.com">ajayijohn19999@gmail.com</a>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <h3>Phone</h3>
-                <p>+234 (0)9160650495</p>
-            </div>
-        </div>
-
-        <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 3rem;">
-            <a href="https://github.com/stopitmane" target="_blank" style="color: #fff; font-size: 2rem;">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/ajayi-john-124970265" target="_blank" style="color: #fff; font-size: 2rem;">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://docs.google.com/document/d/1rBlRbWu7k1_trSVfsEKIC3UTxzctQdj6/edit?usp=sharing&ouid=116009973024344697540&rtpof=true&sd=true" target="_blank" style="color: #fff; font-size: 2rem;">
-                <i class="fas fa-file-alt"></i>
-            </a>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Projects -->
+    <section id="projects" class="section section-alt">
+        <div class="section-inner">
+            <p class="section-label">Projects</p>
+            <h2 class="section-heading">Selected work</h2>
+
+            <div class="projects-grid">
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-img-wrap">
+                        <img src="naijacart-screenshot.png" alt="NaijaCart Platform" class="project-img" loading="lazy" />
+                        <div class="project-img-overlay">
+                            <a href="https://naijacart-wttp.vercel.app/" target="_blank" class="overlay-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p class="img-caption">Hero section &mdash; search bar, navigation, and CTA</p>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">React &middot; Next.js &middot; Node.js</span>
+                            <div class="project-links">
+                                <a href="https://github.com/stopitmane/naijacart.git" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://naijacart-wttp.vercel.app/" target="_blank" aria-label="Live"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3>NaijaCart</h3>
+                        <p>Nigerian e-commerce marketplace with a bold hero, product search, and checkout built for local consumers. Clean, mobile-first UI designed to communicate trust and speed.</p>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-img-wrap">
+                        <img src="freshcart-screenshot.png" alt="Freshcart E-Commerce" class="project-img" loading="lazy" />
+                        <div class="project-img-overlay">
+                            <a href="https://freshcart-candy-com.vercel.app/" target="_blank" class="overlay-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p class="img-caption">Homepage with mega-menu, product carousel, and Paystack checkout</p>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">Django REST &middot; React &middot; Paystack</span>
+                            <div class="project-links">
+                                <a href="https://github.com/stopitmane/freshcart.candy.com.git" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://freshcart-candy-com.vercel.app/" target="_blank" aria-label="Live"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3>Freshcart</h3>
+                        <p>Full-stack grocery platform for Nigerian consumers. Django REST backend handles auth and cart logic; React frontend delivers a responsive shopping experience with Paystack payment integration.</p>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-img-wrap">
+                        <img src="product-dashboard-screenshot.png" alt="Product Dashboard" class="project-img" loading="lazy" />
+                        <div class="project-img-overlay">
+                            <a href="https://product-dashboard-task-drab.vercel.app/" target="_blank" class="overlay-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p class="img-caption">Multi-filter inventory table with search, brand, category, and sort controls</p>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">TypeScript &middot; React &middot; MUI</span>
+                            <div class="project-links">
+                                <a href="https://github.com/stopitmane/product-dashboard.git" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://product-dashboard-task-drab.vercel.app/" target="_blank" aria-label="Live"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3>Product Dashboard</h3>
+                        <p>Admin dashboard with real-time inventory management, multi-column filtering, and paginated results across 194 products. Built with TypeScript and React Query for clean, maintainable data handling.</p>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-img-wrap">
+                        <img src="timbucloud-screenshot.png" alt="TimbuCloud E-Commerce" class="project-img" loading="lazy" />
+                        <div class="project-img-overlay">
+                            <a href="https://timbucloudwebsite.vercel.app/" target="_blank" class="overlay-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p class="img-caption">Product grid with category filters and live cart — state via React Context API</p>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">React &middot; Context API &middot; CSS Modules</span>
+                            <div class="project-links">
+                                <a href="https://github.com/stopitmane/timbucloudwebsite.git" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://timbucloudwebsite.vercel.app/" target="_blank" aria-label="Live"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3>TimbuCloud</h3>
+                        <p>Agricultural e-commerce platform for Nigerian produce. Category filtering, live cart with quantity management, and a checkout summary — cart state managed with React Context API.</p>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-img-wrap">
+                        <img src="cv-builder-screenshot.png" alt="CV Builder App" class="project-img" loading="lazy" />
+                        <div class="project-img-overlay">
+                            <a href="https://cv-app-one-sable.vercel.app/" target="_blank" class="overlay-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p class="img-caption">Reactive form with live CV preview — Angular component-based architecture</p>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">Angular &middot; TypeScript &middot; Reactive Forms</span>
+                            <div class="project-links">
+                                <a href="https://github.com/stopitmane/cv-app.git" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://cv-app-one-sable.vercel.app/" target="_blank" aria-label="Live"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3>CV Builder</h3>
+                        <p>Single-page Angular application where users complete a form and generate a styled CV preview in real time. Demonstrates reactive forms, component-based architecture, and strong TypeScript fundamentals.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="section-inner contact-inner">
+            <p class="section-label">Contact</p>
+            <h2 class="section-heading">Let's build something</h2>
+            <p class="contact-sub">Open to new roles, freelance projects, and collaborations. Drop me a message and I'll get back to you.</p>
+            <a href="mailto:ajayijohn19999@gmail.com" class="contact-email">
+                ajayijohn19999@gmail.com <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="contact-links">
+                <a href="https://github.com/stopitmane" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/ajayi-john-124970265" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                <a href="tel:+2349160650495"><i class="fas fa-phone"></i> +234 916 065 0495</a>
+                <a href="https://docs.google.com/document/d/1rBlRbWu7k1_trSVfsEKIC3UTxzctQdj6/edit?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Download CV</a>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
-        <p>&copy; 2026 Ajayi Taiwo John.</p>
+        <p>Designed &amp; built by Ajayi Taiwo John &middot; Lagos, Nigeria &middot; 2026</p>
     </footer>
 
     <script src="script.js"></script>
