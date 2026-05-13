@@ -760,6 +760,20 @@ img { display: block; max-width: 100%; }
     font-size: 1.1rem;
     font-weight: 700;
     color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ts-badge {
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: #3178c6;
+    color: #fff;
+    letter-spacing: 0.04em;
+    vertical-align: middle;
 }
 
 .project-body p {
