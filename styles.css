@@ -628,8 +628,27 @@ img { display: block; max-width: 100%; }
    ============================================= */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    .projects-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .projects-grid { grid-template-columns: 1fr; }
+}
+
+.ai-badge {
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: linear-gradient(135deg, #7c3aed, #2563eb);
+    color: #fff;
+    letter-spacing: 0.04em;
+    vertical-align: middle;
 }
 
 .project-card {
@@ -1085,4 +1104,56 @@ img { display: block; max-width: 100%; }
     .hero-cta .btn { text-align: center; justify-content: center; }
     .timeline { padding-left: 1.5rem; }
     .timeline-item { padding-left: 1.5rem; }
+}
+
+/* ── Hero no-image layout ────────────────────── */
+.hero-inner--no-image {
+    grid-template-columns: 1fr;
+    max-width: 760px;
+}
+
+.hero-inner--no-image .hero-text h1 {
+    font-size: clamp(3.5rem, 7vw, 6rem);
+}
+
+.hero-inner--no-image .hero-bio {
+    max-width: 600px;
+}
+
+/* ── Available for work badge in timeline ────── */
+.timeline-meta-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.available-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--accent);
+    background: var(--accent-dim);
+    border: 1px solid rgba(16,185,129,0.25);
+    padding: 3px 10px;
+    border-radius: 100px;
+}
+
+.available-badge .dot {
+    width: 6px;
+    height: 6px;
+    box-shadow: 0 0 5px var(--accent);
+}
+
+/* ── Python badge ────────────────────────────── */
+.py-badge {
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: #3572A5;
+    color: #fff;
+    letter-spacing: 0.04em;
+    vertical-align: middle;
 }
