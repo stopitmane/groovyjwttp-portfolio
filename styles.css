@@ -632,6 +632,22 @@ img { display: block; max-width: 100%; }
     gap: 1.5rem;
 }
 
+.more-projects {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 1rem 0 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.more-projects a {
+    color: var(--accent);
+    font-weight: 600;
+    transition: opacity var(--transition);
+}
+
+.more-projects a:hover { opacity: 0.75; }
+
 @media (max-width: 1024px) {
     .projects-grid { grid-template-columns: repeat(2, 1fr); }
 }
