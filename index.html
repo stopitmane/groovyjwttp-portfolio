@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajayi Taiwo John — Frontend Developer</title>
+    <meta name="description" content="Frontend Developer based in Lagos, Nigeria. IBM-certified. Specialising in React, TypeScript and JavaScript — with solid backend exposure across the full stack.">
+    <meta name="author" content="Ajayi Taiwo John">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Ajayi.</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about"          class="nav-link">About</a></li>
+                <li><a href="#skills"         class="nav-link">Skills</a></li>
+                <li><a href="#experience"     class="nav-link">Experience</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#projects"       class="nav-link">Projects</a></li>
+                <li><a href="#contact"        class="nav-link">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-inner hero-inner--no-image">
+            <div class="hero-text">
+                <h1>Ajayi Taiwo<br><span class="accent">John.</span></h1>
+                <p class="hero-role">Frontend Developer &mdash; React &middot; TypeScript &middot; JavaScript &middot; Node.js</p>
+                <p class="hero-bio">
+                    IBM-certified developer with production experience across the full stack —
+                    TypeScript and React on the frontend, Python and Node.js on the backend.
+                    I build things that work end to end.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">See My Work</a>
+                    <a href="#contact"  class="btn btn-outline">Get In Touch</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/stopitmane" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ajayi-john-124970265" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:johnajayi.bincom@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="section-inner">
+            <p class="section-label">About Me</p>
+            <h2 class="section-heading">Frontend developer —<br>with backend range</h2>
+            <p class="about-lead">
+                I build interfaces that are fast, typed, and production-ready — React components,
+                custom hooks, TypeScript throughout, and UIs that connect cleanly to the APIs behind them.
+                My GitHub spans React, TypeScript, JavaScript, Python, PHP, and Jupyter notebooks.
+                I know the backend well enough to never be blocked by it.
+            </p>
+            <div class="about-cards">
+                <div class="about-card animate-on-scroll">
+                    <div class="about-card-icon">&#x26A1;</div>
+                    <h3>Frontend Development</h3>
+                    <p>React and TypeScript — component architecture, custom hooks, Context API, React Query, and responsive UIs. Production-shipped across multiple projects.</p>
+                </div>
+                <div class="about-card animate-on-scroll">
+                    <div class="about-card-icon">&#x1F527;</div>
+                    <h3>Backend Exposure</h3>
+                    <p>REST APIs with Node.js, Express.js and Python, production Nginx/Gunicorn deployments, Celery task queues. Enough to build and debug the full stack.</p>
+                </div>
+                <div class="about-card animate-on-scroll">
+                    <div class="about-card-icon">&#x1F5C4;&#xFE0F;</div>
+                    <h3>Database &amp; Systems</h3>
+                    <p>PostgreSQL schema design, query optimisation, and data work in Python with Jupyter notebooks. End-to-end thinking from data layer to UI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
+        <div class="section-inner">
+            <p class="section-label">Tech Stack</p>
+            <h2 class="section-heading">Core technologies</h2>
+
+            <div class="skills-primary">
+                <div class="skill-pill"><i class="fab fa-react"></i> React</div>
+                <div class="skill-pill"><i class="fas fa-code"></i> TypeScript</div>
+                <div class="skill-pill"><i class="fab fa-js-square"></i> JavaScript</div>
+                <div class="skill-pill"><i class="fab fa-node-js"></i> Node.js</div>
+                <div class="skill-pill"><i class="fas fa-server"></i> Express.js</div>
+                <div class="skill-pill"><i class="fab fa-html5"></i> HTML/CSS</div>
+                <div class="skill-pill"><i class="fas fa-plug"></i> REST APIs</div>
+            </div>
+
+            <p class="skills-also">Also worked with: <span>Python &middot; Django &middot; PHP &middot; Laravel &middot; Angular &middot; PostgreSQL &middot; Redis &middot; Celery &middot; Nginx &middot; Gunicorn &middot; Jupyter &middot; Git &middot; Docker</span></p>
+
+            <div class="skills-depth">
+                <div class="depth-card animate-on-scroll">
+                    <h3>Frontend — React &amp; TypeScript</h3>
+                    <p>Fully typed React apps — strict interfaces, custom hooks, React Query for data fetching, Context API state management. Production-shipped across 5 projects.</p>
+                </div>
+                <div class="depth-card animate-on-scroll">
+                    <h3>Backend — Python &amp; Node.js</h3>
+                    <p>REST APIs with Express.js and Django REST Framework, Nginx/Gunicorn deployments, Celery task queues, and Redis for async processing.</p>
+                </div>
+                <div class="depth-card animate-on-scroll">
+                    <h3>Data &amp; Systems</h3>
+                    <p>PostgreSQL schema design, query optimisation, Python scripting and Jupyter notebooks. Multiple languages across real production projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+        <div class="section-inner">
+            <p class="section-label">Experience</p>
+            <h2 class="section-heading">Where I've worked</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-body">
+                        <div class="timeline-meta">
+                            <span class="timeline-date">Mar 2024 – Present</span>
+                            <span class="timeline-badge">Current</span>
+                        </div>
+                        <h3>Frontend Developer</h3>
+                        <p class="timeline-company">Enerx Ltd &middot; Adeniyi Jones, Lagos</p>
+                        <p class="timeline-desc">Built a multi-page exhibition platform in React.js and Node.js serving real-world users in production. Implemented interactive UI features for the John SciTec Website. Authored automated test cases and integrated third-party APIs and internal microservices.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React.js</span><span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span><span class="tech-tag">API Testing</span><span class="tech-tag">Microservices</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-body">
+                        <div class="timeline-meta">
+                            <span class="timeline-date">Jul 2025 – Present</span>
+                            <span class="timeline-badge">Current</span>
+                        </div>
+                        <h3>Full Stack Developer (Apprenticeship)</h3>
+                        <p class="timeline-company">Bincom Academy &middot; Yaba, Lagos</p>
+                        <p class="timeline-desc">Building full-stack applications within cross-functional teams. Integrating RESTful APIs with Laravel and Node.js for projects serving over 15,000 active users. Working within professional code review processes and modern development workflows.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span><span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Laravel</span><span class="tech-tag">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-body">
+                        <div class="timeline-meta">
+                            <span class="timeline-date">Feb 2025 – Jun 2025</span>
+                        </div>
+                        <h3>Backend Developer Intern</h3>
+                        <p class="timeline-company">DON-CLEM LTD</p>
+                        <p class="timeline-desc">Designed and built RESTful APIs with Django REST Framework. Configured production deployments with Nginx and Gunicorn. Reduced response times for long-running operations by offloading background jobs to Celery and Redis.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Django REST Framework</span><span class="tech-tag">Python</span>
+                            <span class="tech-tag">Nginx</span><span class="tech-tag">Celery</span><span class="tech-tag">Redis</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section section-alt">
+        <div class="section-inner">
+            <p class="section-label">Certifications</p>
+            <h2 class="section-heading">IBM Full Stack &amp; beyond</h2>
+
+            <div class="cert-featured">
+                <div class="cert-featured-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="cert-featured-body">
+                    <div class="cert-featured-meta">
+                        <span class="cert-issuer">IBM &middot; Coursera</span>
+                        <a href="https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer" target="_blank" class="cert-verify">Verify <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <h3>IBM Full Stack Software Developer</h3>
+                    <p>12-course professional certificate covering frontend development, backend systems, cloud deployment, containers (Docker &amp; Kubernetes), microservices, CI/CD pipelines, and software engineering best practices.</p>
+                    <div class="cert-tags">
+                        <span>HTML/CSS/JS</span><span>React</span><span>Node.js</span>
+                        <span>Python &amp; Flask</span><span>Django</span><span>SQL &amp; NoSQL</span>
+                        <span>Docker</span><span>Kubernetes</span><span>Cloud (IBM)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cert-grid">
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-card-top">
+                        <span class="cert-card-issuer">IBM &middot; Coursera</span>
+                        <i class="fas fa-check-circle cert-card-check"></i>
+                    </div>
+                    <h4>Developing AI Applications with Python &amp; Flask</h4>
+                    <p>Building and deploying AI-powered web applications using Python, Flask, and IBM Watson APIs.</p>
+                </div>
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-card-top">
+                        <span class="cert-card-issuer">IBM &middot; Coursera</span>
+                        <i class="fas fa-check-circle cert-card-check"></i>
+                    </div>
+                    <h4>Python for Data Science, AI &amp; Development</h4>
+                    <p>Python fundamentals, data analysis with Pandas and NumPy, and integration with AI services.</p>
+                </div>
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-card-top">
+                        <span class="cert-card-issuer">IBM &middot; Coursera</span>
+                        <i class="fas fa-check-circle cert-card-check"></i>
+                    </div>
+                    <h4>Developing Back-End Apps with Node.js &amp; Express</h4>
+                    <p>RESTful API design, authentication, and backend architecture with Node.js and Express.</p>
+                </div>
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-card-top">
+                        <span class="cert-card-issuer">IBM &middot; Coursera</span>
+                        <i class="fas fa-check-circle cert-card-check"></i>
+                    </div>
+                    <h4>Introduction to Cloud Computing</h4>
+                    <p>Cloud architecture, deployment models, and hands-on experience with IBM Cloud services.</p>
+                </div>
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-card-top">
+                        <span class="cert-card-issuer">New Horizons</span>
+                        <i class="fas fa-check-circle cert-card-check"></i>
+                    </div>
+                    <h4>Full Stack Web Development Internship</h4>
+                    <p>Hands-on internship programme covering full stack development practices and real project delivery.</p>
+                </div>
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-card-top">
+                        <span class="cert-card-issuer">Bincom Academy</span>
+                        <i class="fas fa-check-circle cert-card-check"></i>
+                    </div>
+                    <h4>Python (Intermediate)</h4>
+                    <p>Intermediate Python programming — OOP, data structures, file handling, and scripting projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <div class="section-inner">
+            <p class="section-label">Projects</p>
+            <h2 class="section-heading">Selected work</h2>
+
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll">
+                    <div class="project-img-wrap">
+                        <img src="devdoc-screenshot.png" alt="DevDoc AI" class="project-img" loading="lazy" />
+                        <div class="project-img-overlay">
+                            <a href="https://devdoc-ai-liart.vercel.app/" target="_blank" class="overlay-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p class="img-caption">Mode selector, language picker, and code input — paste &amp; generate</p>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">React &middot; TypeScript &middot; Claude AI</span>
+                            <div class="project-links">
+                                <a href="https://github.com/stopitmane/devdoc-ai.git" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://devdoc-ai-liart.vercel.app/" target="_blank" aria-label="Live"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3>DevDoc AI <span class="ai-badge">AI</span></h3>
+                        <p>Paste code and instantly generate documentation, READMEs, code reviews, explanations, or unit tests — powered by Claude AI. Five modes, eight languages, fully typed React hooks.</p>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <div class="project-img-wrap">
+                        <img src="naijacart-screenshot.png" alt="NaijaCart Platform" class="project-img" loading="lazy" />
+                        <div class="project-img-overlay">
+                            <a href="https://naijacart-wttp.vercel.app/" target="_blank" class="overlay-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p class="img-caption">Hero section &mdash; search bar, navigation, and CTA</p>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">React &middot; Next.js &middot; Node.js</span>
+                            <div class="project-links">
+                                <a href="https://github.com/stopitmane/naijacart.git" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://naijacart-wttp.vercel.app/" target="_blank" aria-label="Live"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3>NaijaCart</h3>
+                        <p>Nigerian e-commerce marketplace with a bold hero, product search, and checkout built for local consumers. Clean, mobile-first UI designed to communicate trust and speed.</p>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <div class="project-img-wrap">
+                        <img src="taskflow-screenshot.png" alt="TaskFlow API" class="project-img" loading="lazy" />
+                        <div class="project-img-overlay">
+                            <a href="https://taskflow-api-sc8g.onrender.com/api/docs/" target="_blank" class="overlay-btn">API Docs <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p class="img-caption">Live API · Interactive Swagger docs · 9 passing tests · Deployed on Render</p>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">Python &middot; Django REST &middot; PostgreSQL</span>
+                            <div class="project-links">
+                                <a href="https://taskflow-api-sc8g.onrender.com/api/" target="_blank" aria-label="Live API" title="Live API"><i class="fas fa-server"></i></a>
+                                <a href="https://taskflow-api-sc8g.onrender.com/api/docs/" target="_blank" aria-label="API Docs" title="Interactive Swagger Docs"><i class="fas fa-book"></i></a>
+                                <a href="https://github.com/stopitmane/taskflow-api" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>TaskFlow API <span class="py-badge">PY</span></h3>
+                        <p>Project and task management REST API — token auth, CRUD, custom actions (complete, assign, archive), service layer pattern with 9 passing tests. Live on Render with PostgreSQL and interactive Swagger docs.</p>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <div class="project-img-wrap">
+                        <img src="devtrack-screenshot.png" alt="DevTrack" class="project-img" loading="lazy" />
+                        <div class="project-img-overlay">
+                            <a href="https://devtrack-app.vercel.app/" target="_blank" class="overlay-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p class="img-caption">Pomodoro timer with animated ring + task board with priority and status filters</p>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">React &middot; TypeScript &middot; Custom Hooks</span>
+                            <div class="project-links">
+                                <a href="https://github.com/stopitmane/devtrack.git" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://devtrack-app.vercel.app/" target="_blank" aria-label="Live"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3>DevTrack <span class="ts-badge">TS</span></h3>
+                        <p>Productivity dashboard combining a Pomodoro timer (full state machine via custom hook) with a typed task manager. Active task links to timer — pomodoro count auto-increments on session complete.</p>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <div class="project-img-wrap">
+                        <img src="product-dashboard-screenshot.png" alt="Product Dashboard" class="project-img" loading="lazy" />
+                        <div class="project-img-overlay">
+                            <a href="https://product-dashboard-task-drab.vercel.app/" target="_blank" class="overlay-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p class="img-caption">Multi-filter inventory table with search, brand, category, and sort controls</p>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">TypeScript &middot; React &middot; React Query &middot; MUI</span>
+                            <div class="project-links">
+                                <a href="https://github.com/stopitmane/product-dashboard.git" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://product-dashboard-task-drab.vercel.app/" target="_blank" aria-label="Live"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3>Product Dashboard <span class="ts-badge">TS</span></h3>
+                        <p>Fully typed React admin dashboard — strict TypeScript interfaces, React Query for data fetching, multi-column filtering, and paginated results across 194 products.</p>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-img-wrap">
+                        <img src="python-portfolio-screenshot.png" alt="Python Automation Portfolio" class="project-img" loading="lazy" />
+                        <div class="project-img-overlay">
+                            <a href="https://github.com/stopitmane/python-portfolio" target="_blank" class="overlay-btn">View Repo <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p class="img-caption">4 CLI automation tools — file organizer, uptime monitor, CSV processor, system health dashboard</p>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">Python &middot; CLI &middot; Stdlib Only</span>
+                            <div class="project-links">
+                                <a href="https://github.com/stopitmane/python-portfolio" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Python Automation Suite <span class="py-badge">PY</span></h3>
+                        <p>4 production-ready automation tools — smart file organiser with undo, website uptime monitor with email alerts, fluent CSV pipeline API, and a live system health dashboard with sparklines. Zero external dependencies.</p>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <div class="project-img-wrap">
+                        <img src="spotify-screenshot.png" alt="Spotify Stats Dashboard" class="project-img" loading="lazy" />
+                        <div class="project-img-overlay">
+                            <a href="https://spotify-stats-wttp.vercel.app/" target="_blank" class="overlay-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p class="img-caption">Top tracks, artists &amp; recent plays — pulled live from Spotify Web API</p>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">React &middot; Spotify API &middot; PKCE OAuth</span>
+                            <div class="project-links">
+                                <a href="https://github.com/stopitmane/spotify-stats" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://spotify-stats-wttp.vercel.app/" target="_blank" aria-label="Live"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3>Spotify Stats <span class="ai-badge">API</span></h3>
+                        <p>Personal music analytics dashboard built on the Spotify Web API. Implements PKCE OAuth (no backend required), auto token refresh, and visualises top tracks, top artists with popularity rings, and recently played history across three time ranges.</p>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <div class="project-img-wrap">
+                        <img src="ai-sentiment-screenshot.png" alt="AI Sentiment Analyser" class="project-img" loading="lazy" />
+                        <div class="project-img-overlay">
+                            <a href="https://ai-sentiment-wttp.onrender.com/" target="_blank" class="overlay-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p class="img-caption">Single review analysis — polarity gauge, confidence score, keyword chips</p>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">Python &middot; Flask &middot; NLP &middot; TextBlob</span>
+                            <div class="project-links">
+                                <a href="https://github.com/stopitmane/ai-sentiment" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://ai-sentiment-wttp.onrender.com/" target="_blank" aria-label="Live"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3>AI Sentiment Analyser <span class="py-badge">PY</span></h3>
+                        <p>NLP web app that analyses product review sentiment using TextBlob and NLTK. Returns polarity, subjectivity, confidence score, tone, key phrases, and sentence-level breakdown. Includes a REST API with batch analysis endpoint — deployed on Render. Linked to IBM AI Flask certification.</p>
+                    </div>
+                </div>
+            <div class="more-projects">
+                <p>More projects on <a href="https://github.com/stopitmane" target="_blank">GitHub <i class="fab fa-github"></i></a></p>
+            </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+        <div class="section-inner contact-inner">
+            <p class="section-label">Contact</p>
+            <h2 class="section-heading">Let's build something</h2>
+            <p class="contact-sub">Open to new roles, freelance projects, and collaborations. Drop me a message and I'll get back to you.</p>
+            <a href="mailto:johnajayi.bincom@gmail.com" class="contact-email">
+                johnajayi.bincom@gmail.com <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="contact-links">
+                <a href="https://github.com/stopitmane" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/ajayi-john-124970265" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                <a href="tel:+2349160650495"><i class="fas fa-phone"></i> +234 916 065 0495</a>
+                <a href="Ajayi_CV.pdf" target="_blank"><i class="fas fa-file-alt"></i> Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Designed &amp; built by Ajayi Taiwo John &middot; Lagos, Nigeria &middot; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
